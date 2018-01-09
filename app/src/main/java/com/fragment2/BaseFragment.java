@@ -38,7 +38,7 @@ public abstract class BaseFragment extends Fragment {
 
     public abstract void initview();
 
-
+    //当前页面显示的时候是false
     @Override
     public void onHiddenChanged(boolean hidden) {
         super.onHiddenChanged(hidden);
