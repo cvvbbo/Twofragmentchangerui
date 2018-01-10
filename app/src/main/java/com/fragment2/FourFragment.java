@@ -42,6 +42,8 @@ public class FourFragment extends BaseFragment {
             public void onClick(View view) {
                 //1.怎么拿到上一个view的控件？
                 Log.e("--","--执行了么");
+                /***同一个fragment的事务才能对其进行操作  1.10***/
+               /***如果不是使用同一个事务返都返不会来***/
                 getChildFragmentManager().popBackStack();
 
                 changerThirdFragment.ThirdFragmentCallback();
